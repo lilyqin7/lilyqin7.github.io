@@ -14,12 +14,27 @@ nav {
     width: 100%;
     position: fixed;
     display: flex;
-    top: 0; /* Keep it at the top */
-    left: 0; /* Align it to the left */
-    justify-content: space-between; /* Space out items (logo and links) */
-    align-items: center; /* Vertically center the items */
-    padding: 0 20px; /* Add some padding to the left and right */
-    z-index: 1000; /* Keep the navbar on top of other elements */
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 px;
+    z-index: 1000;
+}
+
+.nav-logo {
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 50px;
+}
+
+.nav-logo:hover{
+    color: #075375;
 }
 
 .nav-links {
@@ -29,7 +44,7 @@ nav {
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 50px;
 }
   
 .nav-links a {
@@ -45,3 +60,12 @@ nav {
 .nav-links a:hover {
     color: #075375;
 } 
+
+footer {
+    color: #000;
+    text-align: center;
+    font-size: 13px;
+    bottom: 0;
+    width: 100%;
+    position: fixed; 
+}
