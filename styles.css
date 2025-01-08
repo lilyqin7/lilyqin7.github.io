@@ -1,3 +1,47 @@
+@font-face {
+    font-family: "Instrument Sans";
+    src: url('InstrumentSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
 body {
     background-color: #E8F8FA;
+    font-family: "Instrument Sans", sans-serif;
 }
+
+nav {
+    background-color: #CDE1EA;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    top: 0; /* Keep it at the top */
+    left: 0; /* Align it to the left */
+    justify-content: space-between; /* Space out items (logo and links) */
+    align-items: center; /* Vertically center the items */
+    padding: 0 20px; /* Add some padding to the left and right */
+    z-index: 1000; /* Keep the navbar on top of other elements */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+  
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-links a:hover {
+    color: #075375;
+} 
